@@ -10,7 +10,10 @@
     </head>
     <body>
 
-
+        <x-global.background/>
+        <x-global.navigator/>
+        <x-global.header/>
+        <x-global.footer/>
 
     </body>
 </html>

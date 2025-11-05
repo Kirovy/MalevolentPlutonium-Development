@@ -3,7 +3,7 @@
 /////////////////////////////////////
 // Sets up the database connection //
 /////////////////////////////////////
-database_initialize()
+initialize_database()
 {
     config          = spawnstruct();
     config.host     = GetDvar("mysql_host");

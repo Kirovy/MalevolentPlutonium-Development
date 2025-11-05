@@ -9,7 +9,7 @@
 ///////////////////////////////////////////////
 // Runs threads when the server first starts //
 ///////////////////////////////////////////////
-init_commands()
+initialize_commands()
 {
     chat::register_command(".chat", ::command_chat(args), true);
 }
