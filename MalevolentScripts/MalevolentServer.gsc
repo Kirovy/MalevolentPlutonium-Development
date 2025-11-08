@@ -46,9 +46,6 @@ initialize_player() {
     {
         level waittill("connected", player);
         player thread initialize_account();
-
-        player enableInvulnerability();
-        player.ignoreme = 1;
     }
 }
 
