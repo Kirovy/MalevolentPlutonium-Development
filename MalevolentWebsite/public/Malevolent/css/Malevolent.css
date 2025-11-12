@@ -17,15 +17,13 @@ body {
     width: 100%;
     position: absolute;
     top: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-.background img {
+    background: url(../images/header.webp) center center no-repeat;
+    background-size: cover;
+    height: calc(80vh);
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0)));
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    z-index: -1;
     opacity: 0.2;
-    overflow: hidden;
-    width: 100%;
 }
 
 nav {
@@ -78,7 +76,7 @@ header {
     width: 100%;
 }
 header .header {
-    padding-top: 100px;
+    padding-top: 140px;
 }
 header .header h1 {
     text-align: center;
