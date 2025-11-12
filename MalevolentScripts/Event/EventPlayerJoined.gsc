@@ -6,11 +6,11 @@
 ///////////////////////////////////////////////
 
 //////////////////////////////////////////
-// Command Account Prestige Script      //
+// Event Player Joined Script           //
 //////////////////////////////////////////
-// Prestiges player up to next prestige //
+// Event fires everytime a player joins //
 //////////////////////////////////////////
-command_account_prestige(args)
+event_player_joined()
 {
-
+    database_query("INSERT INTO server_joins (`player_name`) VALUES (?)", array(self.name));
 }

@@ -10,7 +10,13 @@
 ////////////////////////////////////////
 // Levels player up to the next level //
 ////////////////////////////////////////
-command_account_levelup()
+command_account_levelup(args)
 {
+    player_data = strToK(self.pers["player-data"], ";");
+
+    if (int(player_data[0]) == 65)
+        self tell("You're max level, to carry on you need to .prestige");
+        return;
+
 
 }

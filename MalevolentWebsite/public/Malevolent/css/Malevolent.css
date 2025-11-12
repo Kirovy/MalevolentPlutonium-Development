@@ -33,7 +33,7 @@ nav {
 nav .navigator {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
 }
 nav .navigator div li {
     padding: 25px;
@@ -76,7 +76,7 @@ header {
     width: 100%;
 }
 header .header {
-    padding-top: 140px;
+    padding-top: 125px;
 }
 header .header h1 {
     text-align: center;

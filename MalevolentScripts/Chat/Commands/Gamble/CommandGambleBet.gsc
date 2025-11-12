@@ -1,0 +1,45 @@
+////////////////////////////////////////
+// Include Base Game Scripts          //
+////////////////////////////////////////
+#include maps/mp/_utility;            //
+#include common_scripts/utility;      //
+#include maps/mp/zombies/_zm_utility; //
+#include maps/mp/zombies/_zm;         //
+////////////////////////////////////////
+
+///////////////////////////////////////////////
+// Include Utility Scripts                   //
+///////////////////////////////////////////////
+#include scripts/zm/Utility/UtilityDatabase; //
+#include scripts/zm/Utility/Utility;         //
+///////////////////////////////////////////////
+
+////////////////////////////////////////////
+// Command Gamble Bet Script              //
+////////////////////////////////////////////
+// Gambles a given amount at a 50 percent //
+// chance with the server                 //
+////////////////////////////////////////////
+command_gamble_bet(args)
+{
+    if (!isDefined(args[1]))
+        self tell("You need to input a value to bet");
+        return;
+
+    account = database_query("SELECT * FROM user_statistics WHERE id=?", array(self.guid));
+
+    if (int(args[1]) > int(account[0][0]["player_money"]))
+        self tell("You cannot bet more money than you have in your bank account");
+        return;
+
+    if (!isDefined(args[2]))
+        if (cointoss())
+            self tell("You have won your bet against the server and won ^5$" + args[1]);
+            update = database_query("UPDATE user_statistics SET player_money=player_money+? WHERE id=?", array(args[1], self.guid));
+            insert = database_query("INSERT INTO user_actions () VALUES ()", array(self.name, "Won $" + args[1] + " from gambling"));
+        else
+            update = database_query("UPDATE user_statistics SET player_money=player_money-? WHERE id=?", array(args[1], self.guid));
+            update = database_query("INSERT INTO user_actions () VALUES ()", array(self.name, "Lost $" + args[1] + " from gambling"));
+
+    // add player to player bets here
+}
