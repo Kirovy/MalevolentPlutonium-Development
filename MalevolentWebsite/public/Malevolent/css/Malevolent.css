@@ -207,6 +207,51 @@ header .header i {
     font-weight: 600;
 }
 
+.player-actions {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 2px solid #a7a7a70d;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+}
+.player-actions .placeholder {
+    width: 100%;
+    background: #a7a7a70d;
+    box-sizing: border-box;
+    position: relative;
+    height: 105px;
+    padding-left: 15px;
+    padding-right: 10px;
+    border: 2px solid #a7a7a70d;
+    border-radius: 10px;
+}
+
+.server-actions {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 2px solid #a7a7a70d;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+    margin-top: 50px;
+}
+.server-actions .placeholder {
+    width: 100%;
+    background: #a7a7a70d;
+    box-sizing: border-box;
+    position: relative;
+    height: 105px;
+    padding-left: 15px;
+    padding-right: 10px;
+    border: 2px solid #a7a7a70d;
+    border-radius: 10px;
+}
+
 footer {
     width: 100%;
     border-top: 2px solid #ffffff1c;
