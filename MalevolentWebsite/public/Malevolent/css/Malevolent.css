@@ -226,6 +226,7 @@ footer .footer div:first-child {
 footer .footer div:last-child {
     display: flex;
     justify-content: end;
+    padding-top: 12.5px;
 }
 footer .footer div:last-child a li {
     color: white;
@@ -240,4 +241,10 @@ footer .footer div:last-child a li {
 footer .footer div:last-child a li:hover {
     background: #3b82f612;
     color: #599bfa;
+}
+footer .footer p {
+    margin: 0;
+    color: #ffffffcc;
+    font-weight: normal;
+    font-size: 14px;
 }
