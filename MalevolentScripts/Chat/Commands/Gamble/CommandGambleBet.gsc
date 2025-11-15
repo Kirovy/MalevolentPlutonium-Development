@@ -33,13 +33,14 @@ command_gamble_bet(args)
         return;
 
     if (!isDefined(args[2]))
-        if (cointoss())
+        if (cointoss()) {
             self tell("You have won your bet against the server and won ^5$" + args[1]);
             update = database_query("UPDATE user_statistics SET player_money=player_money+? WHERE id=?", array(args[1], self.guid));
             insert = database_query("INSERT INTO user_actions () VALUES ()", array(self.name, "Won $" + args[1] + " from gambling"));
-        else
+        } else {
             update = database_query("UPDATE user_statistics SET player_money=player_money-? WHERE id=?", array(args[1], self.guid));
             update = database_query("INSERT INTO user_actions () VALUES ()", array(self.name, "Lost $" + args[1] + " from gambling"));
+        }
 
     // add player to player bets here
 }

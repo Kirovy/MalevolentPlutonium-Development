@@ -2,7 +2,7 @@
 // Include Chat Command Scripts                               //
 ////////////////////////////////////////////////////////////////
 #include scripts/zm/Chat/Commands/CommandChat;                //
-#include scripts/zm/Chat/Commands/Bank/CommandAccountDetails; //
+#include scripts/zm/Chat/Commands/Account/CommandAccountDetails; //
 #include scripts/zm/Chat/Commands/Bank/CommandBankBalance;    //
 #include scripts/zm/Chat/Commands/Bank/CommandBankDeposit;    //
 #include scripts/zm/Chat/Commands/Bank/CommandBankPay;        //

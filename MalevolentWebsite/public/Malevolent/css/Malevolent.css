@@ -146,8 +146,8 @@ header .header i {
     font-size: 15px;
     margin: 0;
 }
-.newspaper .title,
-.newspaper .description {
+.newspaper div:first-child .title,
+.newspaper div:first-child .description {
     position: relative;
     transition: transform 0.6s ease, opacity 0.6s ease;
 }

@@ -29,3 +29,15 @@
         opacity: 1;
     }
 }
+
+.fade {
+    transition: opacity 0.6s ease;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
