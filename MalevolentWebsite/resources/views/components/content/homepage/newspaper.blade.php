@@ -16,16 +16,30 @@
 ?>
 
 <div class="newspaper">
-    <article>
-        <h2 class="title" id="news-title">{{ $newspaper[0]['title'] }}</h2>
-        <p class="description" id="news-description">{{ $newspaper[0]['description'] }}</p>
-    </article>
-    <progress
-        id="newspaper-progress"
-        class="progress"
-        value="0"
-        max="1000"
-    ></progress>
+    <div>
+        <article>
+            <h2 class="title" id="news-title">{{ $newspaper[0]['title'] }}</h2>
+            <p class="description" id="news-description">{{ $newspaper[0]['description'] }}</p>
+        </article>
+        <progress
+            id="newspaper-progress"
+            class="progress"
+            value="0"
+            max="1000"
+        ></progress>
+    </div>
+    <div>
+        <article>
+            <h2 class="title" id="news-title">{{ $newspaper[1]['title'] }}</h2>
+            <p class="description" id="news-description">{{ $newspaper[1]['description'] }}</p>
+        </article>
+    </div>
+    <div>
+        <article>
+            <h2 class="title" id="news-title">{{ $newspaper[2]['title'] }}</h2>
+            <p class="description" id="news-description">{{ $newspaper[2]['description'] }}</p>
+        </article>
+    </div>
 </div>
 
 <script>

@@ -110,6 +110,13 @@ header .header i {
 
 .newspaper {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "newspaper newspaper";
+    gap: 15px;
+}
+.newspaper div {
+    width: 100%;
     background: #a7a7a70d;
     box-sizing: border-box;
     position: relative;
@@ -117,6 +124,13 @@ header .header i {
     border: 2px solid #a7a7a70d;
     border-radius: 10px;
     overflow: hidden;
+}
+.newspaper div:first-child {
+    grid-area: newspaper;
+    font-size: 18px;
+}
+.newspaper div .title {
+    font-size: 18px;
 }
 .newspaper progress {
     height: 5px;
@@ -131,7 +145,6 @@ header .header i {
     color: #ffffffcc;
     font-size: 15px;
     margin: 0;
-    padding-bottom: 20px;
 }
 .newspaper .title,
 .newspaper .description {
