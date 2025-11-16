@@ -65,13 +65,67 @@ nav .navigator div li:hover i {
     padding-right: 5px;
     padding-left: 0;
 }
-nav .navigator div:nth-child(1) {
+nav .navigator > div:nth-child(1) {
     padding: 25px 0;
 }
-nav .navigator div:nth-child(2) {
+nav .navigator > div:nth-child(2) {
     display: flex;
     justify-content: end;
     padding: 25px 0;
+}
+nav .navigator div .menu {
+    display: inline-block;
+}
+nav .navigator div .menu:hover .menu-content {
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+nav .navigator div .menu .menu-content {
+    display: none;
+    background-color: #2e3343;
+    border: 2px solid #393e4e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    padding-left: 0;
+    border-radius: 10px;
+    margin: 0;
+}
+nav .navigator div .menu .menu-content li {
+    padding: 5px 25px;
+    border-radius: 0;
+    list-style-type: none;
+    display: block;
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: 14px;
+}
+nav .navigator div .menu .menu-content li:hover {
+    background: #3b82f612;
+    color: #599bfa;
+}
+nav .navigator div .menu .menu-content a {
+    font-weight: 600;
+    color: white;
+}
+nav .navigator div .menu .menu-content i {
+    font-weight: 600;
+    color: white;
+    font-size: 13px;
+    transition: 0.2s;
+    padding-left: 0;
+    padding-right: 5px;
+}
+nav .navigator div .menu .menu-content li:hover i {
+    color: #599bfa;
+    transform: rotate(0deg);
+    padding-left: 0;
+}
+nav .navigator div .menu .menu-content .divider {
+    border: 2px solid #393e4e;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 header {
