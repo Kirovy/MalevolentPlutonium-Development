@@ -5,7 +5,7 @@
                 <div class="menu">
                     <a><li>Homepage <i class="fa-solid fa-angle-up"></i></li></a>
                     <div class="menu-content">
-                        <a><li><i class="fa-solid fa-house"></i> Homepage</li></a>
+                        <a href="/" wire:navigate><li><i class="fa-solid fa-house"></i> Homepage</li></a>
                         <div class="divider"></div>
                         <a><li><i class="fa-solid fa-newspaper"></i> Newspaper</li></a>
                         <a><li><i class="fa-solid fa-music"></i> Radio Station</li></a>
@@ -23,6 +23,7 @@
                     <a><li>Support <i class="fa-solid fa-angle-up"></i></li></a>
                     <div class="menu-content">
                         <a><li><i class="fa-solid fa-ticket"></i> Tickets</li></a>
+                        <a><li><i class="fa-solid fa-clipboard-list"></i> Commands</li></a>
                         <a><li><i class="fa-solid fa-book"></i> Guides</li></a>
                         <div class="divider"></div>
                         <a><li><i class="fa-brands fa-discord"></i> Discord Server</li></a>
@@ -35,8 +36,8 @@
                 <div class="menu">
                     <a><li>Account <i class="fa-solid fa-angle-up"></i></li></a>
                     <div class="menu-content">
-                        <a><li><i class="fa-solid fa-user-plus"></i> Register</li></a>
-                        <a><li><i class="fa-solid fa-right-to-bracket"></i> Login</li></a>
+                        <a href="/login" wire:navigate><li><i class="fa-solid fa-user-plus"></i> Register</li></a>
+                        <a href="/register" wire:navigate><li><i class="fa-solid fa-right-to-bracket"></i> Login</li></a>
                     </div>
                 </div>
             </div>

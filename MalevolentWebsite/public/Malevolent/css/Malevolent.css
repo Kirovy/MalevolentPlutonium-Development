@@ -93,7 +93,7 @@ nav .navigator div .menu .menu-content {
     margin: 0;
 }
 nav .navigator div .menu .menu-content li {
-    padding: 5px 25px;
+    padding: 5px 15px 5px 10px;
     border-radius: 0;
     list-style-type: none;
     display: block;
@@ -107,11 +107,12 @@ nav .navigator div .menu .menu-content li:hover {
 }
 nav .navigator div .menu .menu-content a {
     font-weight: 600;
-    color: white;
+    color: #ffffffcc;
+    text-decoration: none;
 }
 nav .navigator div .menu .menu-content i {
     font-weight: 600;
-    color: white;
+    color: #ffffffcc;
     font-size: 13px;
     transition: 0.2s;
     padding-left: 0;
@@ -181,10 +182,12 @@ header .header i {
 }
 .newspaper div:first-child {
     grid-area: newspaper;
-    font-size: 18px;
 }
 .newspaper div .title {
     font-size: 18px;
+}
+.newspaper div:first-child .title {
+    font-size: 26px;
 }
 .newspaper progress {
     height: 5px;
