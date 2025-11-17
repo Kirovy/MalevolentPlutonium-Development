@@ -7,28 +7,28 @@
                     <div class="menu-content">
                         <a href="/" wire:navigate><li><i class="fa-solid fa-house"></i> Homepage</li></a>
                         <div class="divider"></div>
-                        <a><li><i class="fa-solid fa-newspaper"></i> Newspaper</li></a>
-                        <a><li><i class="fa-solid fa-music"></i> Radio Station</li></a>
+                        <a href="/newspaper" wire:navigate><li><i class="fa-solid fa-newspaper"></i> Newspaper</li></a>
+                        <a href="/radio" wire:navigate><li><i class="fa-solid fa-music"></i> Radio Station</li></a>
                         <div class="divider"></div>
-                        <a><li><i class="fa-solid fa-users"></i> Meet The Team</li></a>
+                        <a href="/team" wire:navigate><li><i class="fa-solid fa-users"></i> Meet The Team</li></a>
                     </div>
                 </div>
                 <div class="menu">
                     <a><li>Community <i class="fa-solid fa-angle-up"></i></li></a>
                     <div class="menu-content">
-                        <a><li><i class="fa-solid fa-chart-area"></i> Round Leaderboards</li></a>
-                        <a><li><i class="fa-solid fa-chart-area"></i> Server Leaderboards</li></a>
-                        <a><li><i class="fa-solid fa-chart-area"></i> Player Leaderboards</li></a>
+                        <a href="/round" wire:navigate><li><i class="fa-solid fa-chart-area"></i> Round Leaderboards</li></a>
+                        <a href="/server" wire:navigate><li><i class="fa-solid fa-chart-area"></i> Server Leaderboards</li></a>
+                        <a href="/player" wire:navigate><li><i class="fa-solid fa-chart-area"></i> Player Leaderboards</li></a>
                         <div class="divider"></div>
-                        <a><li><i class="fa-solid fa-magnifying-glass"></i> Player Search</li></a>
+                        <a href="/search" wire:navigate><li><i class="fa-solid fa-magnifying-glass"></i> Player Search</li></a>
                     </div>
                 </div>
                 <div class="menu">
                     <a><li>Support <i class="fa-solid fa-angle-up"></i></li></a>
                     <div class="menu-content">
-                        <a><li><i class="fa-solid fa-ticket"></i> Tickets</li></a>
-                        <a><li><i class="fa-solid fa-clipboard-list"></i> Commands</li></a>
-                        <a><li><i class="fa-solid fa-book"></i> Guides</li></a>
+                        <a href="/tickets" wire:navigate><li><i class="fa-solid fa-ticket"></i> Tickets</li></a>
+                        <a href="/commands" wire:navigate><li><i class="fa-solid fa-clipboard-list"></i> Commands</li></a>
+                        <a href="/guides" wire:navigate><li><i class="fa-solid fa-book"></i> Guides</li></a>
                         <div class="divider"></div>
                         <a><li><i class="fa-brands fa-discord"></i> Discord Server</li></a>
                         <a><li><i class="fa-brands fa-youtube"></i> Youtube Channel</li></a>
