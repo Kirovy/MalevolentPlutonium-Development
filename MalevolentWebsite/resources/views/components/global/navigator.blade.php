@@ -9,14 +9,18 @@
                         <div class="divider"></div>
                         <a><li><i class="fa-solid fa-newspaper"></i> Newspaper</li></a>
                         <a><li><i class="fa-solid fa-music"></i> Radio Station</li></a>
+                        <div class="divider"></div>
+                        <a><li><i class="fa-solid fa-users"></i> Meet The Team</li></a>
                     </div>
                 </div>
                 <div class="menu">
                     <a><li>Community <i class="fa-solid fa-angle-up"></i></li></a>
                     <div class="menu-content">
                         <a><li><i class="fa-solid fa-chart-area"></i> Round Leaderboards</li></a>
-                        <a><li><i class="fa-solid fa-chart-pie"></i> Stats Leaderboards</li></a>
+                        <a><li><i class="fa-solid fa-chart-area"></i> Server Leaderboards</li></a>
+                        <a><li><i class="fa-solid fa-chart-area"></i> Player Leaderboards</li></a>
                         <div class="divider"></div>
+                        <a><li><i class="fa-solid fa-magnifying-glass"></i> Player Search</li></a>
                     </div>
                 </div>
                 <div class="menu">
@@ -38,6 +42,8 @@
                     <div class="menu-content">
                         <a href="/login" wire:navigate><li><i class="fa-solid fa-user-plus"></i> Register</li></a>
                         <a href="/register" wire:navigate><li><i class="fa-solid fa-right-to-bracket"></i> Login</li></a>
+                        <div class="divider"></div>
+                        <a><li><i class="fa-solid fa-key"></i> Forgot Password</li></a>
                     </div>
                 </div>
             </div>

@@ -11,6 +11,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .background {
@@ -80,6 +81,12 @@ nav .navigator div .menu:hover .menu-content {
     display: block;
     position: absolute;
     z-index: 2;
+}
+nav .navigator div .menu:last-child:hover .menu-content {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    right: 0;
 }
 nav .navigator div .menu .menu-content {
     display: none;
@@ -169,8 +176,12 @@ header .header i {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "newspaper newspaper";
     gap: 15px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 2px solid #a7a7a70d;
+    border-radius: 10px;
 }
-.newspaper div {
+.newspaper > div {
     width: 100%;
     background: #a7a7a70d;
     box-sizing: border-box;
