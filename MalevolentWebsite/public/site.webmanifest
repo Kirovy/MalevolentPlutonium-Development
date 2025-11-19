@@ -1,0 +1,74 @@
+{
+  "name": "Malevolent Server",
+  "short_name": "Malevolent",
+  "description": "Malevolent Server website with news, leaderboards, guides, and store.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#1f2333",
+  "theme_color": "#599bfa",
+
+  "shortcuts": [
+    {
+      "name": "Homepage",
+      "short_name": "Home",
+      "description": "Go to the homepage",
+      "url": "/"
+    },
+    {
+      "name": "Newspaper",
+      "short_name": "News",
+      "description": "View the newspaper",
+      "url": "/newspaper"
+    },
+    {
+      "name": "Radio Station",
+      "short_name": "Radio",
+      "description": "Listen to the radio station",
+      "url": "/radio"
+    },
+    {
+      "name": "Meet The Team",
+      "short_name": "Team",
+      "description": "See the team members",
+      "url": "/team"
+    },
+    {
+      "name": "Round Leaderboard",
+      "short_name": "Round LB",
+      "description": "View the round leaderboard",
+      "url": "/round"
+    },
+    {
+      "name": "Server Leaderboards",
+      "short_name": "Server LB",
+      "description": "View server leaderboards",
+      "url": "/server"
+    },
+    {
+      "name": "Player Leaderboards",
+      "short_name": "Player LB",
+      "description": "View player leaderboards",
+      "url": "/player"
+    },
+    {
+      "name": "Player Search",
+      "short_name": "Search",
+      "description": "Search for a player",
+      "url": "/search"
+    },
+    {
+      "name": "Tickets",
+      "short_name": "Tickets",
+      "description": "Open or manage tickets",
+      "url": "/tickets"
+    },
+    {
+      "name": "Commands",
+      "short_name": "Commands",
+      "description": "View available commands",
+      "url": "/commands"
+    }
+  ]
+}
