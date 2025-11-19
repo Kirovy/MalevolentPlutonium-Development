@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('servers', function (Blueprint $table) {
             $table->id();
+            $table->string('server_ip');
+            $table->integer('server_port')->unique();
+            $table->integer('server_player_count')->default(0);
+            $table->integer('server_round')->default(0);
+            $table->integer('server_kills')->default(0);
+            $table->integer('server_downs')->default(0);
+            $table->integer('server_revives')->default(0);
+            $table->integer('server_headshots')->default(0);
             $table->timestamps();
         });
     }

@@ -13,7 +13,6 @@ class UserActions extends Model
      */
     protected $fillable = [
         'name',
-        'email',
-        'password',
+        'action',
     ];
 }

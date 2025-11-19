@@ -12,8 +12,13 @@ class Servers extends Model
      * @var list<string>
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'server_ip',
+        'server_port',
+        'server_player_count',
+        'server_round',
+        'server_kills',
+        'server_downs',
+        'server_revives',
+        'server_headshots',
     ];
 }
