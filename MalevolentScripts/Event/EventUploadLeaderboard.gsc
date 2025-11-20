@@ -28,6 +28,9 @@ event_upload_leaderboard()
 
     iteration = 0;
     kills = 0;
+    downs = 0;
+    revives = 0;
+    headshots = 0;
 
     foreach(player in players)
         if (int(iteration) == 0)
@@ -36,6 +39,9 @@ event_upload_leaderboard()
             list = list + " " + player.name;
 
         kills += player.pers["kills"];
+        downs += player.pers["downs"];
+        revives += player.pers["revives"];
+        headshots += player.pers["headshots"];
 
         iteration += 1;
 

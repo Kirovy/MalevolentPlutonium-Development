@@ -22,7 +22,7 @@ initialize_account() {
     account = database_query("SELECT * FROM user_statistics WHERE id = ?", array(self.guid));
 
     if (account[0].size == 0) {
-        database_query("INSERT INTO `user_statistics` (`id`, `name`) VALUES (?, ?)", array(self.guid, self.name));
+        database_query("INSERT INTO `user_statistics` (`id`, `name`, `created_at`, `updated_at`) VALUES (?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)", array(self.guid, self.name));
         account = database_query("SELECT * FROM user_statistics WHERE id = ?", array(self.guid));
     }
 
@@ -34,11 +34,11 @@ initialize_account() {
     self.pers["player-data"] = account[0][0]["player_level"] + ";" + account[0][0]["player_rank"] + ";" + account[0][0]["player_prestige"] + ";" + self.name + ";" + account[0][0]["player_color"];
 
     welcome = array(
-        "-----[ ^5Malevolent Zombies^7 ]-----",
-        "Welcome to Malevolent, The best zombie servers",
-        "Type .help for a list of commands u can use",
-        "Fully register our website malevolent.website",
-        "-----[ ^5Malevolent Zombies^7 ]-----"
+        "---------[ ^5Malevolent Zombies^7 ]---------",
+        "Welcome to ^5Malevolent^7, The best zombie servers",
+        "Type ^5.help^7 for a list of commands u can use",
+        "Fully register at our website ^5malevolent.website^7",
+        "---------[ ^5Malevolent Zombies^7 ]---------"
     );
 
     foreach (message in welcome)

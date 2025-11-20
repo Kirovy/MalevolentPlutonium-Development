@@ -37,6 +37,9 @@ return new class extends Migration
             $table->integer('player_gambled')->default(0);
             $table->integer('player_gambled_lost')->default(0);
             $table->integer('player_gambled_won')->default(0);
+
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 

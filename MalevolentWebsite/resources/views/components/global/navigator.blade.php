@@ -43,7 +43,7 @@
                         <a href="/login" wire:navigate><li><i class="fa-solid fa-user-plus"></i> Register</li></a>
                         <a href="/register" wire:navigate><li><i class="fa-solid fa-right-to-bracket"></i> Login</li></a>
                         <div class="divider"></div>
-                        <a><li><i class="fa-solid fa-key"></i> Forgot Password</li></a>
+                        <a href="/forgot" wire:navigate><li><i class="fa-solid fa-key"></i> Forgot Password</li></a>
                     </div>
                 </div>
             </div>
