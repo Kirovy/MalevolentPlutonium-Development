@@ -12,6 +12,8 @@
 #include scripts/zm/Chat/Commands/Bank/CommandBankWithdraw;       //
 #include scripts/zm/Chat/Commands/Gamble/CommandGambleBet;        //
 #include scripts/zm/Chat/Commands/Staff/CommandStaffGodmode;      //
+#include scripts/zm/Chat/Commands/Staff/CommandStaffPlayer;       //
+#include scripts/zm/Chat/Commands/Staff/CommandStaffPlayers;      //
 ////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////
@@ -36,4 +38,6 @@ initialize_commands()
     chat::register_command(".bet", ::command_gamble_bet(args), true);
 
     chat::register_command(".godmode", ::command_staff_godmode(args), true);
+    chat::register_command(".player", ::command_staff_player(args), true);
+    chat::register_command(".players", ::command_staff_players(args), true);
 }
