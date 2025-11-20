@@ -40,13 +40,15 @@ command_account_levelup(args)
             next_level = int(account[0][0]["player_level"]) + 1;
         }
 
-        database_query("UPDATE  user_statistics SET player_level=?, player_money=? WHERE id=?", array(account[0][0]["player_level"], account[0][0]["player_money"], self.guid));
+        database_query("UPDATE user_statistics SET player_level=?, player_money=? WHERE id=?", array(account[0][0]["player_level"], account[0][0]["player_money"], self.guid));
+        database_query("INSERT INTO user_actions (`name`, `action`) VALUES (?, ?)",  array(self.name, "has leveled up to level " + account[0][0]["player_level"]));
 
         self tell("[^5LevelUp^7] You have levelled up as many times as you can afford");
 
         return;
     }
 
-    account = database_query("UPDATE user_statistics SET player_money=player_money-?, player_level=player_level+1 WHERE id=?", array(next_level_money, self.guid));
+    database_query("UPDATE user_statistics SET player_money=player_money-?, player_level=player_level+1 WHERE id=?", array(next_level_money, self.guid));
+    database_query("INSERT INTO user_actions (`name`, `action`) VALUES (?, ?)",  array(self.name, "has leveled up to level " + next_level));
     self tell("[^5LevelUp^7] You have levelled up to ^5" + next_level + "^7 for ^5$" + utility_format_number(next_level_money));
 }

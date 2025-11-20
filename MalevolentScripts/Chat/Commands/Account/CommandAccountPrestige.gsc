@@ -31,7 +31,8 @@ command_account_prestige(args)
         return;
     }
 
-    account = database_query("UPDATE user_statistics SET player_money=player_money-500000, player_prestige=player_prestige+1 WHERE id=?", array(self.guid));
+    database_query("UPDATE user_statistics SET player_money=player_money-500000, player_prestige=player_prestige+1 WHERE id=?", array(self.guid));
+    database_query("INSERT INTO user_actions (`name`, `action`) VALUES (?, ?)",  array(self.name, "has prestiged up to prestige " + next_prestige));
     next_prestige = int(player_data[2]) + 1;
     self tell("[^5Prestige^7] You have prestiged up to ^5" + utility_format_number(next_prestige));
 }

@@ -20,9 +20,10 @@
 ///////////////////////////////////////////////
 initialize_account() {
     account = database_query("SELECT * FROM user_statistics WHERE id = ?", array(self.guid));
+    database_query("INSERT INTO user_actions (`name`, `action`) VALUES (?, ?)",  array(self.name, "has just started playing on " + utility_get_map()));
 
     if (account[0].size == 0) {
-        database_query("INSERT INTO `user_statistics` (`id`, `name`, `created_at`, `updated_at`) VALUES (?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)", array(self.guid, self.name));
+        database_query("INSERT INTO `user_statistics` (`id`, `name`) VALUES (?, ?)", array(self.guid, self.name));
         account = database_query("SELECT * FROM user_statistics WHERE id = ?", array(self.guid));
     }
 
